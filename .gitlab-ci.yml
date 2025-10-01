@@ -1,0 +1,33 @@
+stages:
+  - some
+
+variables:
+  ALLURE_LAUNCH_NAME: "Expecting 10 results to arrive - ${CI_PROJECT_NAME} - ${CI_COMMIT_SHORT_SHA}"
+  ALLURE_LAUNCH_TAGS: "${CI_COMMIT_REF_NAME}, gitlab, long, ten-results"
+  ALLURE_RESULTS: "./allure-results"
+  TESTS_ENDPOINT: "https://never.never.never.let.you.down"
+  TESTS_BROWSER: "firefox"
+  TESTS_BRANCH: ${CI_COMMIT_REF_NAME}
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - when: always
+
+some-tests:
+  image: python:3.9.1  
+  stage: some
+  before_script:
+    - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_amd64 -O ./allurectl
+    - chmod +x allurectl
+    - chmod +x tests1.sh
+    - mkdir allure-results || true
+
+  script:
+    - export $(./allurectl job-run env)
+    - ./allurectl watch -- ./tests1.sh
+    - printenv
+
+  after_script:
+    - printenv | grep CI_

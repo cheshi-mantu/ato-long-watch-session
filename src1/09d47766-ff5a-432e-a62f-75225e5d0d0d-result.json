@@ -1,0 +1,193 @@
+{
+  "name": "Successful auth with username and password",
+  "status": "passed",
+  "stage": "finished",
+  "description": "",
+  "steps": [
+    {
+      "name": "Open log-in page ",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Open page:",
+          "source": "60465e98-adde-48ff-b315-e9a47fe41d01-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1675244940181,
+      "stop": 1675244940199
+    },
+    {
+      "name": "Click log-in button ",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1675244940200,
+      "stop": 1675244940200
+    },
+    {
+      "name": "Enter credentials ",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "enter valid email ",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "email:",
+              "source": "587370ab-bc26-4811-b8fa-ff6e6717cece-attachment.txt",
+              "type": "text/plain"
+            }
+          ],
+          "parameters": [],
+          "start": 1675244940200,
+          "stop": 1675244940201
+        },
+        {
+          "name": "enter valid password ",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "password:",
+              "source": "77bc710c-e8e2-4d12-b27e-46fb8233c148-attachment.txt",
+              "type": "text/plain"
+            }
+          ],
+          "parameters": [],
+          "start": 1675244940201,
+          "stop": 1675244940202
+        },
+        {
+          "name": "click ok ",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1675244940202,
+          "stop": 1675244940202
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1675244940200,
+      "stop": 1675244940202
+    },
+    {
+      "name": "Check log-in is successful ",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "`User's avatar must be visible in the side menu",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Check <div> related to user menu is visible",
+              "status": "passed",
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1675244940202,
+              "stop": 1675244940202
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1675244940202,
+          "stop": 1675244940202
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1675244940202,
+      "stop": 1675244940202
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1675244940126,
+  "stop": 1675244940226,
+  "uuid": "09d47766-ff5a-432e-a62f-75225e5d0d0d",
+  "historyId": "beec5b8fbf35cffec32a67e04741e21b",
+  "fullName": "io.qameta.allure.AuthenticationTests.successfulAuthUserPassword",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "web"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "egorivanov"
+    },
+    {
+      "name": "feature",
+      "value": "Authentication"
+    },
+    {
+      "name": "story",
+      "value": "Authentication via username and password"
+    },
+    {
+      "name": "msrv",
+      "value": "Authentication"
+    },
+    {
+      "name": "AS_ID",
+      "value": "99492"
+    },
+    {
+      "name": "host",
+      "value": "gogi.local"
+    },
+    {
+      "name": "thread",
+      "value": "41544@gogi.local.ForkJoinPool-1-worker-19(16)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "io.qameta.allure.AuthenticationTests"
+    },
+    {
+      "name": "testClass",
+      "value": "io.qameta.allure.AuthenticationTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "successfulAuthUserPassword"
+    },
+    {
+      "name": "suite",
+      "value": "io.qameta.allure.AuthenticationTests"
+    }
+  ],
+  "links": []
+}
