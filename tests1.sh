@@ -7,7 +7,7 @@ for file in $src1
 do 
     cp ./src1/${file} allure-results/
     echo "We tried ./src1/${file}"
-    sleep 10
+    sleep 20
     echo "${ALLURE_LAUNCH_URL}"
 done
 
